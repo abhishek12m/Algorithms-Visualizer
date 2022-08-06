@@ -15,11 +15,11 @@
 
 <body>
   <div class="nav-container">
-    <h2 class="title">
+    <h2 class="title" onclick="window.location.reload()">
       Sorting Visualizer
     </h2>
     <div class="navbar" id="navbar">
-      <a id="random">Generate Array</a>
+      <a id="random" onclick="RenderScreen()">Generate Array</a>
       <span class="options">
         <select name="select sort algorithm" id="menu" class="algo-menu">
           <option value="0">Choose Algorithm</option>
@@ -67,6 +67,9 @@
   <footer class="footer">
     <p>Created with &hearts; by Abhishek Maheshwari</p>
   </footer>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/helper.js"></script>
+  <script src="./scripts/sort-algorithms.js"></script>
 </body>
 
 </html>

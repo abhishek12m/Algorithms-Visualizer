@@ -24,7 +24,7 @@ body {
   text-align: center;
   font-size: 2.2em;
   padding-block: 0.5em;
-  color: #e9dfdf;
+  color: #e9e9df;
   cursor: pointer;
 }
 
@@ -71,10 +71,123 @@ body {
   color: #e9dfdf;
 }
 
+.navbar>.icon {
+  display: none;
+}
+
+#menu,
+#random,
+#start {
+  cursor: pointer;
+}
+
+/* Center css */
+.center {
+  margin: 0 auto;
+  box-shadow: 0 2px 5px 0 #e9dfdf;
+  /* Added shadow to make page border free */
+  height: 420px;
+  width: 410px;
+  max-height: 731px;
+}
+
+.array {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100%;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: row;
+}
+
+.cell {
+  display: flex;
+  align-items: flex-start;
+  flex: 0.5;
+  width: 0.000001%;
+  margin: 1px;
+  background-color: #97979a;
+  resize: horizontal;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+
+.cell.done {
+  background-color: #FDA62B;
+  border-color: #FDA62B;
+  color: #e9dfdf;
+  transition: all 0.4s ease-out;
+}
+
+.cell.visited {
+  border-color: #6738DC;
+  background-color: #6738DC;
+  color: #e9dfdf;
+  transition: 0.5s;
+}
+
+.cell.current {
+  border-color: #06ae49;
+  background-color: #06ae49;
+  color: #e9dfdf;
+  transition: all 0.4s ease-out;
+}
+
+.cell.min {
+  background-color: #CB5554;
+  border-color: #CB5554;
+  color: #e9dfdf;
+  transition: all 0.4s ease-out;
+}
+
 /* Footer CSS */
+.fa.fa-heart {
+  color: #eb2c13;
+}
+
 footer {
   text-align: center;
   font-size: 18px;
   color: #727275;
   margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff5252;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    gap: 0.4em;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .navbar *,
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 18px;
+  }
+
+  a#random {
+    order: 4;
+  }
+
+  a.start {
+    order: 5;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .center {
+    width: 95%;
+  }
 }
