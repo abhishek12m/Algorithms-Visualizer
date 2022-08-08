@@ -1,4 +1,4 @@
-# Algorithms-Visualizer
+# [Algorithms-Visualizer](https://abhishek12m.github.io/Algorithms-Visualizer/)
 **Sorting algorithm visualizer** is a web application to visualize sorting algorithms such as **Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort.**
 
 **Technology used: HTML, CSS, Javascript.**
